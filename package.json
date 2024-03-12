@@ -1,16 +1,43 @@
 {
-  "name": "cinemaddict",
+  "name": "cinemaaddict",
   "version": "17.0.0",
   "private": true,
   "description": "Проект «Киноман» от HTML Academy",
   "scripts": {
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
+    "@babel/core": "7.17.9",
+    "@babel/preset-env": "7.16.11",
+    "babel-loader": "8.2.4",
+    "copy-webpack-plugin": "10.2.4",
+    "css-loader": "6.7.1",
     "eslint": "8.13.0",
-    "eslint-config-htmlacademy": "5.1.2"
+    "eslint-config-htmlacademy": "5.1.2",
+    "style-loader": "3.3.1",
+    "webpack": "5.72.0",
+    "webpack-cli": "4.9.2",
+    "webpack-dev-server": "4.8.1"
   },
   "engines": {
     "node": "16"
+  },
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petrmileshko/cinemaddict.git"
+  },
+  "author": "Петр Милешко",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petrmileshko/cinemaddict/issues"
+  },
+  "homepage": "https://github.com/petrmileshko/cinemaddict#readme",
+  "dependencies": {
+    "dayjs": "1.11.1",
+    "flatpickr": "4.6.13",
+    "he": "1.2.0"
   }
 }
